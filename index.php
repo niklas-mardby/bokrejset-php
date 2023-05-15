@@ -7,13 +7,14 @@ require 'classes/user-view.php';
 // review-view
 
 require 'classes/db.php';
-// user dvs id, name, email
+require 'classes/user.php';
 // book dvs id, title, author
-// review (innan userbook) dvs id, user_id, book_id
+// review (innan userbook) dvs id, user_id, book_id, review_text, pages
 
 $pdo = require 'partials/connect.php';
 
 $db = new DB($pdo);
+$userModel = new User($pdo);
 $userView = new UserView();
 
 // ==============================================
@@ -22,9 +23,7 @@ $userView = new UserView();
 include 'partials/header.php';
 
 // våran apps vyer här
-$users = $db->getAll("users");
-
-$userView->renderAllUsersAsList($users);
+$userView->renderAllUsersAsList($userModel->getAllUsers());
 
 // gör om för tre tabeller!
 
