@@ -1,10 +1,9 @@
 <?php
 
-require 'partials/config.php';
 require 'classes/db.php';
+$pdo = require 'partials/connect.php';
 
-$db = new DB();
-
+$db = new DB($pdo);
 
 include 'partials/header.php';
 
