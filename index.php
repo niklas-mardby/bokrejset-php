@@ -7,9 +7,9 @@ require 'classes/user-view.php';
 // review-view
 
 require 'classes/db.php';
-// user
-// book
-// review (innan userbook)
+// user dvs id, name, email
+// book dvs id, title, author
+// review (innan userbook) dvs id, user_id, book_id
 
 $pdo = require 'partials/connect.php';
 
