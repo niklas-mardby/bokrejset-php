@@ -10,4 +10,4 @@ Utöver denna grundidé kan man bygga flera ytterligare funktioner beroende på 
 
 ## En första version av databasen
 
-Vi behöver lagra användare och vilka böcker de läst dvs tre tabeller. Vi börjar där: User, Book, UserBook.
+Vi behöver lagra användare och vilka böcker de läst dvs tre tabeller. Vi börjar där: User, Book, Review.
