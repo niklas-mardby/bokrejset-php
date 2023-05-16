@@ -25,6 +25,6 @@ include 'partials/footer.php';*/
 include 'partials/header.php';
 include 'partials/nav.php';
 
-echo "kommer mer...";
+echo "<p>kommer mer...</p>";
 
 include 'partials/footer.php';
