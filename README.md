@@ -1,4 +1,4 @@
-# bokrejset-php
+# &#128218; bokrejset-php &#128218;
 
 A simple OOP demo with PHP and MySQL for students. All comments and readme in swedish.
 
