@@ -11,3 +11,23 @@ Utöver denna grundidé kan man bygga flera ytterligare funktioner beroende på 
 ## En första version av databasen
 
 Vi behöver lagra användare och vilka böcker de läst dvs tre tabeller. Vi börjar där: User, Book, Review.
+
+### Users
+
+| id  | name        |
+| --- | ----------- |
+| int | varchar(32) |
+
+### Books
+
+| id  | title       |
+| --- | ----------- |
+| int | varchar(32) |
+
+### Reviews
+
+| id  | title       | review | user_id | book_id |
+| --- | ----------- | ------ | ------- | ------- |
+| int | varchar(32) | text   | int     | int     |
+
+Du får så klart lägga till fler kolumner för dina tabeller men detta kan vara en start.
