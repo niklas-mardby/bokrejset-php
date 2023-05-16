@@ -1,28 +1,20 @@
 <?php
 
-/* require 'classes/user-view.php';
-
-require 'classes/db.php';
-require 'classes/user-model.php';
+require 'classes/book-view.php';
+require 'classes/book-model.php';
 
 $pdo = require 'partials/connect.php';
 
-$db = new DB($pdo);
-$userModel = new UserModel($pdo);
-$userView = new UserView();
+$bookModel = new BookModel($pdo);
+$bookView = new BookView();
 
 // ==============================================
-// Skapa vy nedan
 
 include 'partials/header.php';
 include 'partials/nav.php';
 
-// våran apps vyer här om books-tabellen!
-$userView->renderAllUsersAsList($userModel->getAllUsers());
+$bookView->renderAllBooksAsList($bookModel->getAllBooks());
 
-include 'partials/footer.php';*/
+include 'partials/book-form.php';
 
-include 'partials/header.php';
-include 'partials/nav.php';
-echo "kommer mer...";
 include 'partials/footer.php';
