@@ -49,3 +49,33 @@ Nu lägger vi till författare.
 | int | varchar(32) | varchar(32) |
 
 Tips: skapa en första författare. Lägg till den på alla böcker. Sen ändra author_id till att vara en foreign key med ALTER TABLE.
+
+# :muscle: Att göra :muscle:
+
+Lite förslag på saker man kan lägga till baserat på senaste versionen av main.
+
+## Hem
+
+### Sökfält
+
+Här på startsidan kan vi ha ett sökfält på böcker. Gör listan klickbar så när man klickar på en bok så får man upp alla recensioner på den boken.
+
+## Bokrejsare
+
+Utöka tabellen så den har user_name, first_name och last_name för användare. Se till att denna data visas snyggt på sidan.
+
+### Klickbar lista med användare
+
+Istället för att bara lista namnen vill vi att varje namn är klickbart och visar en info-box för den valda användaren samt alla recensioner den personen skrivit.
+
+## Böcker
+
+### Klickbar lista med böcker
+
+Istället för att bara lista böckerna vill vi att varje bok är klickbar och då visas en info-box för den valda boken samt alla recensioner om den boken.
+
+## Recensioner
+
+- Lista recensioner på dess sida
+- Klickbar lista som visar upp all info om vald recension
+- Formulär för att lägga till recensioner (med dropdown för att välja user och book)
