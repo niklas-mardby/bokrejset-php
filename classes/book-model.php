@@ -10,9 +10,9 @@ class BookModel extends DB {
         return $this->getAll($this->table);
     }
 
-    public function addBook(string $title, int $year){
-        $sql = "INSERT INTO {$this->table} (title,year) VALUES (?,?)";
+    public function addBook(string $title, int $year, int $authorId){
+        $sql = "INSERT INTO {$this->table} (title,year,author_id) VALUES (?,?,?)";
         $statement = $this->pdo->prepare($sql);
-        $statement->execute([$title, $year]);
+        $statement->execute([$title, $year, $authorId]);
     }
 }
