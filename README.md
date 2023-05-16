@@ -20,9 +20,9 @@ Vi behöver lagra användare och vilka böcker de läst dvs tre tabeller. Vi bö
 
 ### Books
 
-| id  | title       |
-| --- | ----------- |
-| int | varchar(32) |
+| id  | title       | year |
+| --- | ----------- | ---- |
+| int | varchar(32) | int  |
 
 ### Reviews
 
