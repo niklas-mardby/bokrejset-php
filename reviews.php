@@ -1,13 +1,9 @@
 <?php
 
-require 'classes/user-view.php';
-// book-view
-// review-view
+/* require 'classes/user-view.php';
 
 require 'classes/db.php';
 require 'classes/user-model.php';
-// book dvs id, title, author
-// review (innan userbook) dvs id, user_id, book_id, review_text, pages
 
 $pdo = require 'partials/connect.php';
 
@@ -21,9 +17,14 @@ $userView = new UserView();
 include 'partials/header.php';
 include 'partials/nav.php';
 
-// våran apps vyer här
-//$userView->renderAllUsersAsList($userModel->getAllUsers());
+// våran apps vyer här om books-tabellen!
+$userView->renderAllUsersAsList($userModel->getAllUsers());
 
-// gör om för tre tabeller!
+include 'partials/footer.php';*/
+
+include 'partials/header.php';
+include 'partials/nav.php';
+
+echo "kommer mer...";
 
 include 'partials/footer.php';

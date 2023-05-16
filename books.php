@@ -1,6 +1,6 @@
 <?php
 
-require 'classes/user-view.php';
+/* require 'classes/user-view.php';
 
 require 'classes/db.php';
 require 'classes/user-model.php';
@@ -20,4 +20,9 @@ include 'partials/nav.php';
 // våran apps vyer här om books-tabellen!
 $userView->renderAllUsersAsList($userModel->getAllUsers());
 
+include 'partials/footer.php';*/
+
+include 'partials/header.php';
+include 'partials/nav.php';
+echo "kommer mer...";
 include 'partials/footer.php';

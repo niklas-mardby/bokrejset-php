@@ -1,7 +1,5 @@
 <?php
 
-// en View är en vy dvs den kod som skapar UI
-
 class UserView {
 
     public function renderAllUsersAsList(array $users):void {
