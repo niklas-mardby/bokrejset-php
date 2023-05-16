@@ -1,15 +1,9 @@
 <?php
 
-// spindeln i nätet... Controller, tänk den del som "styr"
-
 require 'classes/user-view.php';
-// book-view
-// review-view
 
 require 'classes/db.php';
 require 'classes/user-model.php';
-// book dvs id, title, author
-// review (innan userbook) dvs id, user_id, book_id, review_text, pages
 
 $pdo = require 'partials/connect.php';
 
@@ -23,9 +17,7 @@ $userView = new UserView();
 include 'partials/header.php';
 include 'partials/nav.php';
 
-// våran apps vyer här
+// våran apps vyer här om books-tabellen!
 $userView->renderAllUsersAsList($userModel->getAllUsers());
-
-// gör om för tre tabeller!
 
 include 'partials/footer.php';

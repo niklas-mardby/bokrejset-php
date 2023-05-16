@@ -4,7 +4,7 @@
 // kommunicerar med db CRUD
 // ( innan har vi gjort en "Monster" som bara bär data men nu bär db data så... )
 
-class User extends DB {
+class UserModel extends DB {
 
     protected $table = "users";
 
