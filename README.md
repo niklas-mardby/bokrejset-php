@@ -31,3 +31,21 @@ Vi behöver lagra användare och vilka böcker de läst dvs tre tabeller. Vi bö
 | int | varchar(32) | text   | int     | int     |
 
 Du får så klart lägga till fler kolumner för dina tabeller men detta kan vara en start.
+
+## En andra version av databasen
+
+Nu lägger vi till författare.
+
+### Books
+
+| id  | title       | year | author_id |
+| --- | ----------- | ---- | --------- |
+| int | varchar(32) | int  | int       |
+
+### Authors
+
+| id  | first_name  | last_name   |
+| --- | ----------- | ----------- |
+| int | varchar(32) | varchar(32) |
+
+Tips: skapa en första författare. Lägg till den på alla böcker. Sen ändra author_id till att vara en foreign key med ALTER TABLE.
