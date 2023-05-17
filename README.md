@@ -54,6 +54,10 @@ Tips: skapa en första författare. Lägg till den på alla böcker. Sen ändra 
 
 Lite förslag på saker man kan lägga till baserat på senaste versionen av main.
 
+## Navigering
+
+- Lägg till en länk till Författare.
+
 ## Hem
 
 ### Sökfält
@@ -79,3 +83,9 @@ Istället för att bara lista böckerna vill vi att varje bok är klickbar och d
 - Lista recensioner på dess sida
 - Klickbar lista som visar upp all info om vald recension
 - Formulär för att lägga till recensioner (med dropdown för att välja user och book)
+
+## Författare
+
+- Lista författare på dess sida
+- Klickbar lista som visar upp all info om vald författare (inkl vilka böcker hen skrivit)
+- Formulär för att lägga till författare
