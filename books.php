@@ -13,7 +13,8 @@ $bookView = new BookView();
 include 'partials/header.php';
 include 'partials/nav.php';
 
-$bookView->renderAllBooksAsList($bookModel->getAllBooks());
+// $bookView->renderAllBooksAsList($bookModel->getAllBooks());
+$bookView->renderAllBooksWithAuthorsAsList($bookModel->getAllBooksWithAuthors());
 
 include 'partials/book-form.php';
 
