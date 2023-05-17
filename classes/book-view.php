@@ -1,10 +1,12 @@
 <?php
 
-class BookView {
+class BookView
+{
 
-    public function renderAllBooksAsList(array $books):void {
+    public function renderAllBooksAsList(array $books): void
+    {
         echo "<ul>";
-        foreach($books as $book){
+        foreach ($books as $book) {
             echo "<li>{$book['title']} ({$book['year']})</li>";
         }
         echo "</ul>";

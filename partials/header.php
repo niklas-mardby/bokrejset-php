@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,5 +9,6 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>bokrejset</title>
 </head>
+
 <body>
     <h1>&#128218; BokRejset &#128218;</h1>

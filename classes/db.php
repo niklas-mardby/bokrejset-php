@@ -1,6 +1,7 @@
 <?php
 
-class DB {
+class DB
+{
 
     protected $pdo;
 
@@ -16,5 +17,4 @@ class DB {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-
 }

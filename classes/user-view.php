@@ -1,10 +1,12 @@
 <?php
 
-class UserView {
+class UserView
+{
 
-    public function renderAllUsersAsList(array $users):void {
+    public function renderAllUsersAsList(array $users): void
+    {
         echo "<ul>";
-        foreach($users as $user){
+        foreach ($users as $user) {
             echo "<li>{$user['name']} (id: {$user['id']})</li>";
         }
         echo "</ul>";

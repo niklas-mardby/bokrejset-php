@@ -2,12 +2,13 @@
 
 require_once 'db.php';
 
-class AuthorModel extends DB {
+class AuthorModel extends DB
+{
 
     protected $table = "authors";
 
-    public function getAllAuthors(){
+    public function getAllAuthors()
+    {
         return $this->getAll($this->table);
     }
-    
 }

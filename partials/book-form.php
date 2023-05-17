@@ -1,8 +1,8 @@
 <?php
-    require_once 'classes/author-model.php';
-    // FULLÖSNING! Flytta till eget view-objekt (eller book-view?)
-    // ful lösning pga att vi lägger för mkt i partials
-    $authorModel = new AuthorModel(connect($host, $db, $user, $password));
+require_once 'classes/author-model.php';
+// FULLÖSNING! Flytta till eget view-objekt (eller book-view?)
+// ful lösning pga att vi lägger för mkt i partials
+$authorModel = new AuthorModel(connect($host, $db, $user, $password));
 ?>
 
 <form action="form-handlers/book-form-handler.php" method="post">
@@ -15,13 +15,13 @@
         <input type="text" name="year" id="year">
     </div>
     <div>
-        <label for="author">Författare:</label> 
+        <label for="author">Författare:</label>
         <select name="author-id" id="author">
             <option value="">--Välj författare--</option>
-            
+
             <?php
             $authors = $authorModel->getAllAuthors();
-            foreach($authors as $author){
+            foreach ($authors as $author) {
                 echo "<option value='{$author['id']}'>
                     {$author['first_name']} {$author['last_name']}
                 </option>";
