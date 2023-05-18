@@ -18,7 +18,7 @@ class BookModel extends DB
 
     public function getAllBooksWithAuthors()
     {
-        $sql = "select books.title,books.year,authors.first_name,authors.last_name from books join authors on books.author_id=authors.id";
+        $sql = "SELECT books.title,books.year,authors.first_name,authors.last_name FROM books JOIN authors ON books.author_id=authors.id";
         $statement = $this->pdo->prepare($sql);
         $statement->execute();
         return $statement->fetchAll(PDO::FETCH_ASSOC);
