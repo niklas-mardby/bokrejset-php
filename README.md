@@ -2,6 +2,8 @@
 
 A simple OOP demo with PHP and MySQL for students. All comments and readme in swedish.
 
+NOTE! This is a demo project built for a certain class of students in a specific course on PHP. This repo is not finished.
+
 ## Beskrivning av BokRejset
 
 Vi vill bygga en webbtjänst där användare kan logga böcker de läst, antal sidor och recension för boken. En användares totala antal lästa sidor ska visas i en high-score-tabell. Syftet är att uppmuntra personer att läsa böcker.
